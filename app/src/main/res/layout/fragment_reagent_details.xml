@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReagentDetailsFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Reagent Details"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/titleReagentDetails"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <ScrollView
+        android:layout_below="@+id/titleReagentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/titleReagentDetails"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Sulphuric Acid"
+                android:id="@+id/reagentDetailsName"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Quantity : 100gm"
+                android:id="@+id/reagentDetailsquantity"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Company : Amar Desh"
+                android:id="@+id/reagentDetailsCompany"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Catalog No : QWERTY"
+                android:id="@+id/reagentDetailsCatalog"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Origin : Bangladesh"
+                android:id="@+id/reagentDetailsOrigin"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Added When : 12/2/2022"
+                android:id="@+id/reagentDetailsdate"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Added By : Dr. Ismail Hossain"
+                android:id="@+id/reagentDetailsperson"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Lab : Molecular Biology"
+                android:id="@+id/reagentDetailslab"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Department : Biochemistry and Molecular Biology"
+                android:id="@+id/reagentDetailsDept"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                >
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/reagentDetailsUpdateBtn"
+                    android:layout_marginTop="32dp"
+                    android:text="Update"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_button"
+                    android:textSize="18sp"
+                    />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/reagentDetailsDeleteBtn"
+                    android:layout_marginTop="32dp"
+                    android:text="Delete"
+                    android:background="@drawable/custom_button"
+                    android:textSize="18sp"
+
+
+                    />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/reagentDetailsUpdateShareBtn"
+                    android:layout_marginTop="32dp"
+                    android:text="Update"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_button"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    />
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/reagentDetailsremoveShareBtn"
+                    android:layout_marginTop="32dp"
+                    android:text="Remove"
+                    android:background="@drawable/custom_button"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:id="@+id/reagentDetailsEditText"
+
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/reagentDetailsShareBtn"
+                android:layout_marginTop="32dp"
+                android:text="Share"
+                android:background="@drawable/custom_button"
+                android:textSize="18sp"
+                android:layout_marginBottom="32dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/reagentDetailsOkBtn"
+                android:layout_marginTop="32dp"
+                android:text="OK"
+                android:background="@drawable/custom_button"
+                android:textSize="18sp"
+                android:layout_marginBottom="32dp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
